@@ -4,8 +4,32 @@ from scipy.sparse import lil_matrix
 from abc import abstractmethod
 
 class BaseExpander:
+    """Base class for column expanders
+    Provides abstract framework for other expander classes designed to dummify
+    compressed data columns into the appropriate dummy columns.
+
+    Parameters
+    ----------
+    This abstract class is not meant to be initialized directly.
+
+    Notes
+    -----
+    Inherited classes must define the following abstract methods:
+
+    ._get_column_names(): 
+        returns the fitted dummy column names
+    ._pull_attributes():
+        parses dummy column names from compressed data
+    .fit(): optional
+        fits the model to the given data 
+    .transform():
+        transforms the given data using fitted information
+    ._create_col_names():
+        responsible for column name formatting
+    """
+
     def __init__(self, extraction_cols, delim = "_"):
-        self.extraction_cols = extraction_cols
+        self.extraction_cols = extraction_cols if type(extraction_cols) == list else [extraction_cols]
         self._fit = False
         self.delim = delim
 
@@ -59,8 +83,28 @@ class BaseExpander:
         return self.transform(X, drop_first, verbose)
 
 class ListColumnExpander(BaseExpander,TransformerMixin):
+    """Expands columns using list-style compressed data column 
+
+    Parameters
+    ----------
+    extraction_cols : list
+        String names for list-style compressed columns
+
+    delim : str, default = "_"
+        Delimiter for dummy column naming
+
+    Examples
+    --------
+    >>> from columnExpander import ListColumnExpander
+    >>>
+    >>> train_data = ... # Pandas DataFrame
+    >>> test_data  = ... # Pandas DataFrame    
+    >>> lce = ListColumnExpander(["categories"])
+    >>>
+    >>> dummy_train_data = lce.fit_transform(train_data)
+    >>> dummy_test_data = lce.transform(test_data)
+    """
     def __init__(self, extraction_cols, delim = "_"):
-        self.extraction_cols = extraction_cols if type(extraction_cols) == list else [extraction_cols]
         super().__init__(extraction_cols, delim)
 
     def _pull_attributes(self, cat_list):
