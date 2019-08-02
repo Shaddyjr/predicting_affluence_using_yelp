@@ -10,7 +10,7 @@ Using tax data, we aim to show that using YELP data dollar signs is enough to pr
 
 Below is a map of disaster count for New York where our model will focus.
 
-<img src="../images/Disaster Count.png" width="720px">
+<img src="images/Disaster Count.png" width="720px">
 
 Focusing on New York we see that there are a total of 12 natural disasters from 1930 to 2010.
 <img src="images/zoomed in disaster count.png" width="720px">
