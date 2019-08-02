@@ -13,17 +13,17 @@ Below is a map of disaster count for New York where our model will focus.
 <img src="../images/Disaster Count.png" width="720px">
 
 Focusing on New York we see that there are a total of 12 natural disasters from 1930 to 2010.
-<img src="../images/zoomed in disaster count.png" width="720px">
+<img src="images/zoomed in disaster count.png" width="720px">
 
 The following is a map of Super - Severe natural disasters in the entire nation from 1930 to 2010.
-<img src="../images/Severe Disaster Count.png" width="720px">
+<img src="images/Severe Disaster Count.png" width="720px">
 
 Focusing on New York we see that there are a total of 3 Super - Severe natural disasters from 1930 to 2010 which, as a ratio of natural disasters that have occured, is a rather large number. Thus focusing efforts on New York could have a large impact on a large population. 
-<img src="../images/Super-Severe 3.png" width="720px">
+<img src="images/Super-Severe 3.png" width="720px">
 
 Below is a colormap broken down by income. Although the bins are not exact in both cases, they are close and thus comparing this map to the cluster map below, formed from our unsupervised cluster fit, we get similar areas of affluency.
 
-<img src="../images/income.png" width="720px">
+<img src="images/income.png" width="720px">
 
 
 
