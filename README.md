@@ -1,3 +1,6 @@
+# Predicting Areas of Affluence using Yelp Pricing Data
+
+
 ## Problem Statement
 
 While the state of having a great deal of money wealth or affluence should never be a factor when choosing to provide disaster aid or not, we must consider the following:
@@ -75,3 +78,10 @@ We recommend that emergency services prioritize sending resources to areas with 
 For future work, we would be interested in creating a similar model for other locations to test the portability of our process.
 
 Additionally, we would recommend Yelp add an indicator (in their API) to flag if a business is in a commercial area.
+
+
+## Source Documentation
+
+- [NYC zip codes](https://www.nycbynatives.com/nyc_info/new_york_city_zip_codes.php)
+- [Yelp API - Business Endpoints](https://www.yelp.com/fusion)
+- [IRS dataset](https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2016-zip-code-data-soi)
