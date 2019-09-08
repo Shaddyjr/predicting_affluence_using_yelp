@@ -1,4 +1,6 @@
 # Predicting Areas of Affluence using Yelp Pricing Data
+<img src="images/yelp.png">
+
 #### Authors: 
 - Eddie Yip  [GitHub](https://github.com/Tempyst) | [Medium](https://medium.com/@eddie.yip2) | [LinkedIn](https://www.linkedin.com/in/eddie-yip-2a37324b/)
 - Hadi Morrow [GitHub](https://github.com/HadiMorrow) | [Medium](https://medium.com/@hadi.a.morrow) | [LinkedIn](https://www.linkedin.com/in/hadi-morrow-4b94164b/)
